@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tv</title>
+<link href="tv.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="parent">
+<img src="combine.jpg" alt="TV" width="1300" height="750">
+	
+<img class="popcorn" src="popcorn_0002_Layer-0.png" alt="popcorn">
+<div class="audio">
+<audio controls>
+	<source src="popcorn.m4a" type="audio/mp3">
+	</audio>
+</div>
+	
+
+<img src="popcorn_0001_Layer-1.png" class="popcorn1" onMouseOver="this.src='popcorn_0000_Layer-2.png'" onMouseOut="this.src='popcorn_0001_Layer-1.png' " alt="popcorn">
+	
+<img class="popcorn2" src="popcorn_0002_Layer-0.png" alt="popcorn">
+	
+
+<img src="popcorn_0000_Layer-2.png" class="popcorn3" onMouseOver="this.src='popcorn_0001_Layer-1.png'" onMouseOut="this.src='popcorn_0000_Layer-2.png' " alt="popcorn">
+	
+<div class="tv_audio">
+<audio controls>
+	<source src="tv.m4a" type="audio/mp3">
+	</audio>
+</div>
+	
+	  <a target="_blank" href="https://www.youtube.com/watch?v=wx4XHloHmMc">	
+	<img class="mySlides" src="autumn.jpg" title= "Autumn" alt="autumn" width="520" height="320">
+  	  </a>
+
+	  <a target="_blank" href="https://www.youtube.com/watch?v=OBDJOJPqwBM">	
+	  <img class="mySlides" src="winter1.jpg" title="Winter" alt="winter" width="520" height="320">
+	  </a>  	  
+	
+	  <a target="_blank" href="https://www.youtube.com/watch?v=XhHCcH7hyqo">	
+	<img class="mySlides" src="spring.jpg" title="Spring" alt="spring" width="520" height="320">
+  	  </a>
+	
+
+	  <a target="_blank" href="https://www.youtube.com/watch?v=DGIXT7ce3vQ">	
+	<img class="mySlides" src="summer.jpg" title="Summer" alt="summer" width="520" height="320">
+  	  </a>
+	
+<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="right" onclick="plusDivs(1)">&#10095;</button>
+	
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
+
+
